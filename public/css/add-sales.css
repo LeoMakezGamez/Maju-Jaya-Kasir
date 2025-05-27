@@ -1,0 +1,211 @@
+.form-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-header h2 {
+    font-size: 24px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #6c5ce7;
+}
+
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+
+.btn-tambah {
+    position: absolute;
+    bottom: 58px;
+    right: 45px;
+    text-align: left;
+    margin-bottom: 60px;
+    background: linear-gradient(to right, #39f84f, #0ce314);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-tambah:hover {
+    background: linear-gradient(to right, #0ce314, #39f84f);
+    transform: scale(1.05);
+}
+
+.btn-back {
+    position: absolute;
+    top: 65px;
+    right: 60px; 
+    background: linear-gradient(to right, #ff758c, #ff4b5c);
+    color: white ;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk estetika */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    z-index: 1000; /* Pastikan di atas elemen lain */
+}
+
+.btn-back:hover {
+    background: linear-gradient(to right, #ff4b5c, #ff758c);
+    transform: scale(1.05);
+}
+
+
+.btn-cancel {
+    background: linear-gradient(to right, #ff5555, #ef4949);
+    color: white;
+}
+
+.btn-submit {
+    background: linear-gradient(to right, #6a5acd, #6550cd);
+    color: white;
+}
+
+/* Transisi hover */
+.btn-cancel:hover {
+    background: linear-gradient(to right, #fc9d9d, #ff7070);
+    transform: scale(1.05);
+}
+
+.btn-submit:hover {
+    background: linear-gradient(to right, #ae9ffa, #9488e1);
+    transform: scale(1.05);
+}
+
+.unit-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.unit-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.unit-header h2 {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: 700;
+}
+
+.unit-table thead {
+    background: linear-gradient(90deg, #ff4b5c, #bc001f);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.unit-table th,
+.unit-table td {
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.unit-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.unit-table tbody tr:hover {
+    background-color: #ffe6e6;
+    transition: background-color 0.3s ease;
+}
+
+.btn-hapus {
+    background: linear-gradient(to right, #f74646, #d31616);
+    color: white;
+    margin-top: 16px;
+    margin-left: 80px;
+}
+
+.btn-hapus:hover {
+    background: linear-gradient(to right, #d31616, #f74646);
+    transform: scale(1.05);
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-actions {
+        text-align: center;
+    }
+}

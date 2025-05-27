@@ -1,0 +1,28 @@
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #555; 
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    flex-wrap: wrap; 
+  }
+  
+  .footer-content .status strong {
+    color: #28a745; 
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      font-size: 12px;
+    }
+  }

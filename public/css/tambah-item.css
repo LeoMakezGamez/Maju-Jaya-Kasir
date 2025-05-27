@@ -1,0 +1,133 @@
+
+.form-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-header h2 {
+    font-size: 24px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #6c5ce7;
+}
+
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 80px;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+
+
+.btn-back {
+    position: absolute; 
+    top: 65px; 
+    right: 65px; 
+    text-align: left; 
+    margin-bottom: 10px;
+    background: linear-gradient(to right,#ff758c, #ff4b5c);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-back:hover {
+    background: linear-gradient(to right,#ff4b5c, #ff758c);
+    transform: scale(1.05);
+}
+
+
+.btn-cancel {
+    background: linear-gradient(to right, #ff5555, #ef4949);
+    color: white;
+}
+
+.btn-submit {
+    background: linear-gradient(to right, #6a5acd, #6550cd);
+    color: white;
+}
+
+/* Transisi hover */
+.btn-cancel:hover {
+    background: linear-gradient(to right, #fc9d9d, #ff7070);
+    transform: scale(1.05);
+}
+
+.btn-submit:hover {
+    background: linear-gradient(to right, #ae9ffa, #9488e1);
+    transform: scale(1.05);
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr; /* Satu kolom untuk layar kecil */
+    }
+
+    .form-actions {
+        text-align: center; /* Pusatkan tombol pada layar kecil */
+    }
+}
